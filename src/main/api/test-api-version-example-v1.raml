@@ -1,0 +1,17 @@
+#%RAML 1.0
+title: Test - API Version Example
+version: 1.0
+baseUri: https://localhost:8082/api/v1.0
+
+/hello:
+  get:
+    queryParameters: 
+      name:
+        type: string
+    responses: 
+      200:
+        body: 
+          application/json:
+            example: |
+              {"V1 message" : "hello world"}
+            
